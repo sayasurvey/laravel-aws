@@ -1,0 +1,2 @@
+# AWSにデプロイ検証するための環境
+LaravelのHello World画面まで
