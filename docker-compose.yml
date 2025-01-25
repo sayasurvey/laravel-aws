@@ -1,4 +1,4 @@
-version: "3.9"  #docker composeファイルのバージョン
+version: "3.3"  #docker composeファイルのバージョン
 services:
   app:  #任意のサービス名
     build: ./infra/php  #ビルドコンテキスト。docker buildを実行する際の作業ディレクトリ
