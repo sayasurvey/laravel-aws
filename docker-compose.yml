@@ -5,13 +5,13 @@ services:
     volumes:   #ホスト側のディレクトリ等をコンテナ側にマウント
       - ./src:/data #srcディレクトリをappコンテナの/dataへマウント
     ports:
-      - 443:443
+      - 8080:8080
   web:
     # https://matsuand.github.io/docs.docker.jp.onthefly/compose/compose-file/#image
     image: nginx:1.20-alpine
     # https://matsuand.github.io/docs.docker.jp.onthefly/compose/compose-file/#ports
     ports:
-      - 8081:80
+      - 443:80
     # https://matsuand.github.io/docs.docker.jp.onthefly/compose/compose-file/#volumes
     volumes:
       - ./src:/data
