@@ -11,7 +11,7 @@ services:
     image: nginx:1.20-alpine
     # https://matsuand.github.io/docs.docker.jp.onthefly/compose/compose-file/#ports
     ports:
-      - 443:80
+      - 80:80
     # https://matsuand.github.io/docs.docker.jp.onthefly/compose/compose-file/#volumes
     volumes:
       - ./src:/data
